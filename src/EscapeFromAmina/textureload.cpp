@@ -1,0 +1,37 @@
+#include <EscapeFromAmina/textureload.hpp>
+void texture::textureLoad() {
+    m_schkaf = LoadTexture("resources/EscapeFromAmina/shkaf.png");
+    m_tymbochka = LoadTexture("resources/EscapeFromAmina/tymbochka.png");
+    m_bed = LoadTexture("resources/EscapeFromAmina/bed.png");
+    m_cut1 = LoadTexture("resources/EscapeFromAmina/cut1.png");
+    m_cut2 = LoadTexture("resources/EscapeFromAmina/cut2.png");
+    m_cut3 = LoadTexture("resources/EscapeFromAmina/cut3.png");
+    m_cut4 = LoadTexture("resources/EscapeFromAmina/cut4.png");
+    m_cut5 = LoadTexture("resources/EscapeFromAmina/cut5.png");
+    m_cut6 = LoadTexture("resources/EscapeFromAmina/cut6.png");
+    m_cut7 = LoadTexture("resources/EscapeFromAmina/cut7.png");
+    m_cut8 = LoadTexture("resources/EscapeFromAmina/cut8.png");
+    m_cut9 = LoadTexture("resources/EscapeFromAmina/cut9.png");
+    m_nextbutton = LoadTexture("resources/EscapeFromAmina/next.png");
+    m_room = LoadTexture("resources/EscapeFromAmina/room.png");
+    m_backbuttonTex = LoadTexture("resources/EscapeFromAmina/back.png");
+    m_outsideRoom = LoadTexture("resources/EscapeFromAmina/escape.png");
+    m_outsideRoom2 = LoadTexture("resources/EscapeFromAmina/escape2.png");
+    m_outsideRoom3 = LoadTexture("resources/EscapeFromAmina/escape3.png");
+    m_outsideRoom4 = LoadTexture("resources/EscapeFromAmina/escape4.png");
+    m_outsideRoom5 = LoadTexture("resources/EscapeFromAmina/escape5.png");
+    m_outsideRoom6 = LoadTexture("resources/EscapeFromAmina/escape6.png");
+    m_outsideRoom7 = LoadTexture("resources/EscapeFromAmina/escape7.png");
+    m_outsideRoom8 = LoadTexture("resources/EscapeFromAmina/escape8.png");
+    m_outsideRoom9 = LoadTexture("resources/EscapeFromAmina/escape9.png");
+    m_outsideHouse = LoadTexture("resources/EscapeFromAmina/outside.png");
+    m_outsideHouse2 = LoadTexture("resources/EscapeFromAmina/outside2.png");
+    m_outsideHouse3 = LoadTexture("resources/EscapeFromAmina/outside3.png");
+    m_outsideHouse4 = LoadTexture("resources/EscapeFromAmina/outside4.png");
+    m_outsideHouse5 = LoadTexture("resources/EscapeFromAmina/outside5.png");
+    m_outsideHouse6 = LoadTexture("resources/EscapeFromAmina/outside6.png");
+    m_outsideHouse7 = LoadTexture("resources/EscapeFromAmina/outside7.png");
+    m_outsideHouse8 = LoadTexture("resources/EscapeFromAmina/outside8.png");
+    m_home = LoadTexture("resources/EscapeFromAmina/home.png");
+    m_gameOver = LoadTexture("resources/EscapeFromAmina/gameover.png");
+}
