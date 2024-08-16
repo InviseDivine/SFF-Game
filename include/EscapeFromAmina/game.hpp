@@ -36,6 +36,7 @@ private:
     Rectangle m_dodge2 = {-1, -1, -1, -1};
     Rectangle m_gameOver = {-1, -1, -1, -1};
     Rectangle m_gameOver2 = {-1, -1, -1, -1};
+
     int m_lastTime = 0;
     int m_lastTime2 = 0;
     int m_lastTime3 = 0;
@@ -44,6 +45,7 @@ private:
     int m_currentRock = 0;
     int m_switchRock = 1;
     int m_lastCutscene = 1;
+
     bool m_isGetTime;
     bool m_isGetTime2;
     bool m_isGetTimeOut = 0;
@@ -51,11 +53,15 @@ private:
     bool m_isGetTimeOut3;
 public:
     bool isGameEnd = 0;
+
     static inline int plusplus = 0;
-    static inline  int menuSwitch = 0;
+    static inline int menuSwitch = 0;
     static inline int characterSwitch = -1;
+
     Sound door;
+
     inline static texture m_texture;
+    
     void draw();
     void update();
     void outsideRoom();
