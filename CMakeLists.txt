@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 file(GLOB SOURCES
     "src/*.cpp"
     "src/EscapeFromAmina/*.cpp"
+    "src/EscapeFromAmina2/*.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

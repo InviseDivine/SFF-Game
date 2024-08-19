@@ -1,4 +1,5 @@
 #pragma once
+#include <EscapeFromAmina2/game2.hpp>
 #include <EscapeFromAmina/game.hpp>
 #include "EscapeFromAmina/textureload.hpp"
 #include "EscapeFromAmina/cutscene.hpp"
@@ -17,6 +18,7 @@ private:
     };
     Game game;
     Cutscene cut;
+    Game2 game2;
     
     int Get1;
 

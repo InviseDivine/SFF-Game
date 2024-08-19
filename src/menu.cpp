@@ -9,6 +9,7 @@ void Menu::init() {
     InitAudioDevice(); 
 
     Game::m_texture.textureLoad();
+    game2.textureLoad2();
     menuTextureLoad();
 
     menuScreen = menu;
@@ -59,17 +60,18 @@ void Menu::init() {
             game.menuSwitch = 0;
             game.characterSwitch = -1;
         }
-        switch (game.characterSwitch) {
+        switch (game.menuSwitch) {
         case -1:
             break;
         case BACK:
             break;
         case NJUYSE:
-            for (auto &mapa : mapArr) {
-                if (CheckCollisionPointRec(cursor, mapa.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-                    game.characterSwitch = mapa.id;
-                }
-            }
+            // for (auto &mapa : mapArr) {
+            //     if (CheckCollisionPointRec(cursor, mapa.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+            //         game.characterSwitch = mapa.id;
+            //     }
+            // }
+            game2.update2();
             break;
         case AMINA:
             break;
@@ -83,11 +85,10 @@ void Menu::init() {
 void Menu::render() {
     BeginDrawing();
     ClearBackground(RAYWHITE);
-
     DrawTexture(menuScreen, 0, 0, WHITE);
-    switch (game.characterSwitch) {
+    switch (game.menuSwitch) {
         case 1:
-            game.draw();
+            game2.draw2();
             break;
     }
     EndDrawing();
