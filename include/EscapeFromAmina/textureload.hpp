@@ -5,6 +5,8 @@
 class texture {
 public: 
     void textureLoad();
+    
+    Texture2D m_playerNjuyse;
     Texture2D m_onScreen;
     Texture2D m_cut1;
     Texture2D m_cut2;

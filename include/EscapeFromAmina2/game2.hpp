@@ -16,6 +16,12 @@ private:
     Texture2D m_cutscene3;
     Texture2D m_cutscene4;
     Texture2D m_bg;
+    Texture2D m_bg2;
+    Texture2D m_bg3;
+    Texture2D m_playerNjuyse;
+    Texture2D m_bgSecondFloor;
+    // Texture2D m_zamokTex;
+    // Texture2D m_otmichkaTex;
 
     Rectangle m_nextButton = {1119, 584, 161, 135};
 public:
@@ -23,4 +29,5 @@ public:
     void cutscene2();
     void update2();
     void draw2();
+    void zamok();
 };

@@ -16,6 +16,7 @@ private:
         Rectangle hitbox;
         int id;
     };
+    
     Game game;
     Cutscene cut;
     Game2 game2;

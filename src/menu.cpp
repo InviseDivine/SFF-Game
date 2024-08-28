@@ -39,15 +39,16 @@ void Menu::init() {
             backCredits = NULL_RECT;
             break;
         case 1:
-            menuScreen = characterChoose;
+            // menuScreen = characterChoose;
             menuArr[1].hitbox = NULL_RECT;
             menuArr[2].hitbox = NULL_RECT;
             menuArr[3].hitbox = NULL_RECT;
-                for(auto& character : characters) {
-                    if(CheckCollisionPointRec(cursor, character.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-                        game.characterSwitch = character.id;
-                    }
-                }
+            game2.update2();
+                // for(auto& character : characters) {
+                //     if(CheckCollisionPointRec(cursor, character.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                //         game.characterSwitch = character.id;
+                //     }
+                // }
             break;
         case 3:
             menuArr[1].hitbox = NULL_RECT;
@@ -60,22 +61,21 @@ void Menu::init() {
             game.menuSwitch = 0;
             game.characterSwitch = -1;
         }
-        switch (game.menuSwitch) {
-        case -1:
-            break;
-        case BACK:
-            break;
-        case NJUYSE:
-            // for (auto &mapa : mapArr) {
-            //     if (CheckCollisionPointRec(cursor, mapa.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-            //         game.characterSwitch = mapa.id;
-            //     }
-            // }
-            game2.update2();
-            break;
-        case AMINA:
-            break;
-        }
+        // switch (game.menuSwitch) {
+        // case -1:
+        //     break;
+        // case BACK:
+        //     break;
+        // case NJUYSE:
+        //     // for (auto &mapa : mapArr) {
+        //     //     if (CheckCollisionPointRec(cursor, mapa.hitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+        //     //         game.characterSwitch = mapa.id;
+        //     //     }
+        //     // }
+        //     break;
+        // case AMINA:
+        //     break;
+        // }
         this->render();
     }
 
@@ -84,13 +84,13 @@ void Menu::init() {
 }
 void Menu::render() {
     BeginDrawing();
-    ClearBackground(RAYWHITE);
-    DrawTexture(menuScreen, 0, 0, WHITE);
-    switch (game.menuSwitch) {
-        case 1:
-            game2.draw2();
-            break;
-    }
+        ClearBackground(RAYWHITE);
+        DrawTexture(menuScreen, 0, 0, WHITE);
+        switch (game.menuSwitch) {
+            case 1:
+                game2.draw2();
+                break;
+        }
     EndDrawing();
 }
 void Menu::menuTextureLoad() {
