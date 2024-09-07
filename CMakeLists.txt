@@ -12,6 +12,8 @@ file(GLOB SOURCES
     "src/NjuyseBankRobbery/*.cpp"
 )
 
+add_subdirectory(libs/raylib)
+
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} raylib)

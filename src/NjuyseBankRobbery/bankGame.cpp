@@ -64,23 +64,23 @@ void gameBank::update() {
             player.room[1] = {0, 721, 1280, 1};
             player.room[2] = {0, 502, 120, 218};
             player.room[3] = {1164, 0, 118, 1000};
-            player.laser[1] = {286, 0, player.m_laserWidth, 532};
-            player.laser[2] = {341, 0, player.m_laserWidth, 560};
-            player.laser[3] = {386, 0, player.m_laserWidth, 600};
-            player.laser[4] = {286, 0, player.m_laserWidth, 69};
-            player.laser[5] = {582, 567, player.m_laserWidth, 116};
-            player.laser[6] = {686, 574, player.m_laserWidth, 146};
-            player.laser[7] = {582, 567, player.m_laserWidth, 116};
-            player.laser[8] = {868, 0, player.m_laserWidth, 537};
-            player.laser[9] = {922, 0, player.m_laserWidth, 581};
+            player.laser[0] = {286, 0, player.m_laserWidth, 532};
+            player.laser[1] = {341, 0, player.m_laserWidth, 560};
+            player.laser[2] = {386, 0, player.m_laserWidth, 600};
+            player.laser[3] = {286, 0, player.m_laserWidth, 69};
+            player.laser[4] = {582, 567, player.m_laserWidth, 116};
+            player.laser[5] = {686, 574, player.m_laserWidth, 146};
+            player.laser[6] = {582, 567, player.m_laserWidth, 116};
+            player.laser[7] = {868, 0, player.m_laserWidth, 537};
+            player.laser[8] = {922, 0, player.m_laserWidth, 581};
             break;
         case 3:
             player.m_table = {821, 384, 274, 296};
-            player.room[11] = {866, 397, 233, 290};
+            player.room[10] = {866, 397, 233, 290};
             m_screen = m_endRoom;
             break;
         case 4:
-            player.room[11] = NULL_RECT;
+            player.room[10] = NULL_RECT;
             player.m_table = NULL_RECT;
             m_chooseRec = {1094, 495, 162, 175};
             m_screen = m_choose;
