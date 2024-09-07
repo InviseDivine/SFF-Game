@@ -57,8 +57,8 @@ void Game::update() {
 }
 void Game::outsideRoom() {
     if(!m_isGetTime) {
-    m_lastTime = GetTime();
-    m_isGetTime = 1;
+        m_lastTime = GetTime();
+        m_isGetTime = 1;
     }
         if(isKeyGet) {
             switch(m_currentScene) {
@@ -120,8 +120,8 @@ void Game::outsideRoom() {
 }
 void Game::outsideHouse() {
     if(!m_isGetTime2) {
-    m_lastTime = GetTime();
-    m_isGetTime2 = 1;
+        m_lastTime = GetTime();
+        m_isGetTime2 = 1;
     }
     if(m_currentframe != 7 && m_currentframe < 7) {
         if(GetTime() >= m_lastTime + 3) {
@@ -273,9 +273,11 @@ void Game::finalCutscene() {
 }
 void Game::draw() {
     DrawTexture(Game::m_texture.m_onScreen,0,0,RAYWHITE);
-    DrawTexture(Game::m_texture.m_nextbutton,1111,582,RAYWHITE);
+    if(plusplus != 9) {
+        DrawTexture(Game::m_texture.m_nextbutton, 1111, 582, RAYWHITE);
+    }
     DrawTexture(Game::m_texture.m_backbuttonScreen,50,500,RAYWHITE); 
-    DrawText(TextFormat("%i",menuSwitch), 0, 0, 20, MAROON);
-    DrawText(TextFormat("%i",m_lastCutscene), 0, 20, 20, MAROON);
-    DrawText(TextFormat("%i",m_switchRoom), 0, 20, 20, MAROON);
+    // DrawText(TextFormat("%i",menuSwitch), 0, 0, 20, MAROON);
+    // DrawText(TextFormat("%i",m_lastCutscene), 0, 20, 20, MAROON);
+    // DrawText(TextFormat("%i",m_switchRoom), 0, 20, 20, MAROON);
 }

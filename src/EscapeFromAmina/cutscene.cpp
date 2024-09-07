@@ -37,7 +37,6 @@ void Cutscene::cutscene() {
             break;
         case 9:
             Game::m_texture.m_onScreen = Game::m_texture.m_room;
-            Game::m_texture.m_nextbutton = Game::m_texture.m_backempty;
             hitboxnext = {-1,-1,-1,-1};
             next.update();
             break;

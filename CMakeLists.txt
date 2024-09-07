@@ -9,6 +9,7 @@ file(GLOB SOURCES
     "src/*.cpp"
     "src/EscapeFromAmina/*.cpp"
     "src/EscapeFromAmina2/*.cpp"
+    "src/NjuyseBankRobbery/*.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

@@ -3,6 +3,7 @@
 #include <EscapeFromAmina/game.hpp>
 #include "EscapeFromAmina/textureload.hpp"
 #include "EscapeFromAmina/cutscene.hpp"
+#include <NjuyseBankRobbery/bankGame.hpp>
 #include <raylib.h>
 
 class Menu {
@@ -16,7 +17,8 @@ private:
         Rectangle hitbox;
         int id;
     };
-    
+        
+    gameBank bank;
     Game game;
     Cutscene cut;
     Game2 game2;
@@ -32,17 +34,17 @@ private:
     Rectangle backCredits = NULL_RECT;
 
     Vector2 cursor;
-    std::vector<HitboxEvent> characters = {
-        {{111, 219, 52, 24}, 0}, 
-        {{165, 257, 133, 119}, 1}, 
-        {{522, 237, 168, 97}, 2}, 
-        {{852, 237, 215, 199}, 3}
-    };
+    // std::vector<HitboxEvent> characters = {
+    //     {{111, 219, 52, 24}, 0}, 
+    //     {{165, 257, 133, 119}, 1}, 
+    //     {{522, 237, 168, 97}, 2}, 
+    //     {{852, 237, 215, 199}, 3}
+    // };
     std::vector<HitboxEvent> mapArr = {
-        {{111, 214, 40, 22}, 0}, 
-        {{421, 258, 84, 89}, 1}, 
-        {{603, 259, 84, 89}, 2}, 
-        {{785, 259, 84, 89}, 3}
+        {NULL_RECT, 0}, 
+        {NULL_RECT, 1}, 
+        {NULL_RECT, 2}, 
+        {NULL_RECT, 3}
     };
     std::vector<HitboxEvent> menuArr = {
         {NULL_RECT, 0}, 
